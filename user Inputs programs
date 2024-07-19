@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a double value (e.g., 2.35): ");
+        double doubleVal1 = scanner.nextDouble();
+
+        System.out.print("Enter a character (e.g., w): ");
+        char charVal = scanner.next().charAt(0);
+
+        System.out.print("Enter an integer (e.g., 12342): ");
+        int intVal1 = scanner.nextInt();
+
+        System.out.print("Enter a float value (e.g., 4.56): ");
+        float floatVal = scanner.nextFloat();
+
+        System.out.print("Enter another character (e.g., f): ");
+        char charVal2 = scanner.next().charAt(0);
+
+        System.out.print("Enter another integer (e.g., -32): ");
+        int intVal2 = scanner.nextInt();
+
+        System.out.print("Enter another double value (e.g., 4.5): ");
+        double doubleVal2 = scanner.nextDouble();
+
+        System.out.println("34 + 78 = " + (34 + 78));
+        System.out.println("23 - 6 = " + (23 - 6));
+        System.out.println("45 * 2 = " + (45 * 2));
+        System.out.println("56 / 2 = " + (56 / 2));
+        System.out.println("45 + 78 + 23 + 12 = " + (45 + 78 + 23 + 12));
+        System.out.println("56 * 34 + 12 / 2 - 13 = " + (56 * 34 + 12 / 2 - 13));
+        System.out.println("1.2 * 6.7 - 4.5 / 2 = " + (1.2 * 6.7 - 4.5 / 2));
+        System.out.println("1.6 * (12 - 2) / 2 + 7.8 - 1.5 = " + (1.6 * (12 - 2) / 2 + 7.8 - 1.5));
+        System.out.println("4.5 * 1.2 - (82 / 2) - 5.6 + 1.234 = " + (4.5 * 1.2 - (82 / 2) - 5.6 + 1.234));
+        System.out.println("8 * 1 + (4 - 2) / 1 + 6 = " + (8 * 1 + (4 - 2) / 1 + 6));
+        System.out.println("3.4 + 1.2 * (3.7 - 1.2) / 2 + 6.8 = " + (3.4 + 1.2 * (3.7 - 1.2) / 2 + 6.8));
+        System.out.println("8.9 * 1.67 - (6.21 - 5.6) + 7.8 - 34 + 157 = " + (8.9 * 1.67 - (6.21 - 5.6) + 7.8 - 34 + 157));
+
+        System.out.print("Enter the first number to swap: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Enter the second number to swap: ");
+        int num2 = scanner.nextInt();
+        System.out.println("Before swap: num1 = " + num1 + ", num2 = " + num2);
+
+        int temp = num1;
+        num1 = num2;
+        num2 = temp;
+        System.out.println("After swap with third variable: num1 = " + num1 + ", num2 = " + num2);
+
+        System.out.println("Swapping back without third variable...");
+        num1 = num1 + num2;
+        num2 = num1 - num2;
+        num1 = num1 - num2;
+        System.out.println("After swap without third variable: num1 = " + num1 + ", num2 = " + num2);
+
+        scanner.close();
+    }
+}
